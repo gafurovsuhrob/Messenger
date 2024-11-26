@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MessengerMegafon" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+
+
+
+
+        <item name="fontFamily">@font/abeezee</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@android:color/transparent</item>
+    </style>
+
+
+    <style name="MyToolBarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:tint">@color/white</item>
+        <item name="titleCentered">true</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="MyThemeOverlay_Toolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <!-- color used by navigation icon and overflow icon -->
+        <item name="colorOnPrimary">@color/background_color_3</item>
+        <item name="android:tint">@color/background_color_3</item>
+        <item name="titleTextColor">@color/text_color_3</item>
+    </style>
+
+    <style name="Theme.MessengerMegafon" parent="Base.Theme.MessengerMegafon" />
+
+    <style name="forTextView_description">
+        <item name="android:textColor">@color/text_color_1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="forTextView1">
+        <item name="android:textColor">@color/text_color_1</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+
+    <style name="forTextView2">
+        <item name="android:textColor">@color/text_color_2</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="forTextView3">
+        <item name="android:textColor">@color/text_color_5</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="forButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:minHeight">62dp</item>
+    </style>
+
+    <style name="roundedCorners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+</resources>

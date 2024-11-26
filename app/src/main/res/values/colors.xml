@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#53B661</color>
+    <color name="colorPrimary_1">#D9D9D9</color>
+    <color name="colorPrimary_2">#F2F2F2</color>
+    <color name="colorPrimary_3">#979797</color>
+    <color name="colorPrimary_4">#E9E9E9</color>
+    <color name="colorPrimary_5">#2C2C2C</color>
+    <color name="colorPrimary_6">#EBEBEB</color>
+    <color name="colorPrimary_7">#818181</color>
+    <color name="colorPrimary_8">#B5B5B5</color>
+    <color name="colorPrimary_9">#A9A9A9</color>
+    <color name="colorPrimary_10">#AEAEAE</color>
+    <color name="colorPrimary_11">#717171</color>
+
+    <color name="stroke_color_1">@color/colorPrimary_1</color>
+    <color name="stroke_color_2">@color/colorPrimary_7</color>
+    <color name="stroke_color_3">@color/colorPrimary_8</color>
+
+    <color name="background_color_1">@color/colorPrimary_2</color>
+    <color name="background_color_2">@color/colorPrimary_4</color>
+    <color name="background_color_3">@color/colorPrimary_5</color>
+    <color name="background_color_4">@color/colorPrimary_9</color>
+    <color name="background_color_5">#F6ABAB</color>
+    <color name="background_color_6">#9ADDA4</color>
+    
+    <color name="text_color_1">@color/colorPrimary_3</color>
+    <color name="text_color_2">@color/colorPrimary</color>
+    <color name="text_color_3">@color/colorPrimary_5</color>
+    <color name="text_color_4">@color/colorPrimary_6</color>
+    <color name="text_color_5">@color/colorPrimary_7</color>
+    
+    <color name="active">@color/colorPrimary</color>
+    <color name="inactive">@color/colorPrimary_11</color>
+
+    <color name="rippleColor">#70FFFFFF</color>
+    <color name="rippleColor_2">#E7979797</color>
+
+</resources>

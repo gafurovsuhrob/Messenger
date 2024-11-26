@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "804049344827",
+    "project_id": "messenger-413b9",
+    "storage_bucket": "messenger-413b9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804049344827:android:5e8e2a5cf49e9f41173f1e",
+        "android_client_info": {
+          "package_name": "com.seros.messenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ1ndzmUehH4wcymucWAXv_RuAZCixXIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

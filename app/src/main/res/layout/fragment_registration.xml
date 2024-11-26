@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".presentation.ui.auth.RegistrationFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_go_to_back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:importantForAccessibility="no"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_registration"
+        app:layout_constraintStart_toStartOf="@+id/inputLayoutPassword"
+        app:layout_constraintTop_toTopOf="@+id/btn_registration"
+        app:rippleColor="@color/rippleColor"
+        app:srcCompat="@drawable/ic_arrow_back"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_title_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/title_registration"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <TextView
+        android:id="@+id/tv_description_3"
+        style="@style/forTextView_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/description_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_3" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivProfilePicture"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        app:strokeColor="@color/stroke_color_1"
+        app:strokeWidth="2dp"
+        android:background="@drawable/bg_background"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description_3"
+        app:shapeAppearanceOverlay="@style/roundedCorners"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_full_name"
+        style="@style/forTextView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivProfilePicture"
+        app:layout_constraintTop_toTopOf="@+id/ivProfilePicture" />
+
+    <TextView
+        android:id="@+id/tv_number_phone"
+        style="@style/forTextView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/tv_full_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_full_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_full_name" />
+
+    <TextView
+        android:id="@+id/tvInitials"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:background="@drawable/bg_view"
+        android:textColor="@color/text_color_5"
+        android:gravity="center"
+        android:text="+"
+        android:textAllCaps="true"
+        android:textSize="52sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfilePicture"
+        app:layout_constraintEnd_toEndOf="@+id/ivProfilePicture"
+        app:layout_constraintStart_toStartOf="@+id/ivProfilePicture"
+        app:layout_constraintTop_toTopOf="@+id/ivProfilePicture" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutFullName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:hint="@string/input_full_name"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/stroke_color_2"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/text_color_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:maxLength="50"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutPhoneNumber"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/input_phone"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/stroke_color_2"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/text_color_1"
+        app:layout_constraintEnd_toEndOf="@+id/inputLayoutFullName"
+        app:layout_constraintStart_toStartOf="@+id/inputLayoutFullName"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutFullName"
+        app:prefixText="+992">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:maxLength="9"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/input_password"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/stroke_color_2"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="@color/text_color_1"
+        app:layout_constraintEnd_toEndOf="@+id/inputLayoutPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/inputLayoutPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutPhoneNumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_registration"
+        style="@style/forButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="6dp"
+        android:text="@string/btn_registration"
+        app:layout_constraintEnd_toEndOf="@+id/inputLayoutPassword"
+        app:layout_constraintStart_toEndOf="@+id/fab_go_to_back"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutPassword" />
+
+    <TextView
+        android:id="@+id/tv_description_4"
+        style="@style/forTextView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/description_you_have_account"
+        app:layout_constraintEnd_toStartOf="@+id/tv_go_to_login"
+        app:layout_constraintStart_toStartOf="@+id/fab_go_to_back"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registration" />
+
+    <TextView
+        android:id="@+id/tv_go_to_login"
+        style="@style/forTextView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/description_login"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_description_4"
+        app:layout_constraintEnd_toEndOf="@+id/btn_registration"
+        app:layout_constraintStart_toEndOf="@+id/tv_description_4"
+        app:layout_constraintTop_toTopOf="@+id/tv_description_4" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_go_to_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:importantForAccessibility="no"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_registration"
+        app:layout_constraintStart_toStartOf="@+id/inputLayoutPassword"
+        app:layout_constraintTop_toTopOf="@+id/btn_registration"
+        app:rippleColor="@color/rippleColor"
+        app:srcCompat="@drawable/ic_arrow_back"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_clear_image"
+        style="?attr/floatingActionButtonSmallStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:importantForAccessibility="no"
+        app:backgroundTint="@color/background_color_5"
+        app:elevation="0dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/ivProfilePicture"
+        app:layout_constraintTop_toTopOf="@+id/tvInitials"
+        app:rippleColor="@color/rippleColor"
+        app:srcCompat="@drawable/ic_trash"
+        app:tint="@color/white" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorColor="@color/colorPrimary"
+        app:trackColor="@color/colorPrimary_2"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_number_phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

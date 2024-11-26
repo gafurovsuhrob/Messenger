@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">MessengerMegafon</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_greeting">Hey, what’s up</string>
+    <string name="description_1">Общайся с друзьями и семьей где угодно и когда угодно</string>
+
+    <string name="title_login">Введите данные для входа</string>
+    <string name="description_2">Пожалуйста, введите свой номер телефона и пароль, чтобы войти в систему.</string>
+
+    <string name="title_registration">Регистрация</string>
+    <string name="description_3">Введите необходимые данные для регистрации в систему.</string>
+
+    <string name="description_you_have_not_account">Еще нет аккаунта?</string>
+    <string name="description_you_have_account">Уже есть аккаунт?</string>
+    <string name="description_registration">Зарегистрируйся</string>
+    <string name="description_login">Войти</string>
+    
+    //menus
+    <string name="menu_profile">Профиль</string>
+    <string name="menu_chats">Чаты</string>
+    <string name="menu_users">Пользователи</string>
+    
+    <string name="menu_view_contact">Просмотр контакта</string>
+    <string name="menu_search">Поиск</string>
+    <string name="menu_clear">Очистить чат</string>
+
+    //button
+    <string name="btn_start">Начать общение</string>
+    <string name="btn_continue">Продолжить</string>
+    <string name="btn_registration">Регистрация</string>
+    <string name="btn_location">Местоположение</string>
+    <string name="btn_contact">Контакт</string>
+    <string name="btn_gallery">Галерея</string>
+    <string name="btn_file">Файл</string>
+    <string name="btn_send">Отправить</string>
+    <string name="btn_call">Позвонить</string>
+    <string name="btn_chat">Написать</string>
+    <string name="btn_search">Поиск</string>
+    <string name="btn_invite">Пригласить</string>
+
+    //inputs
+    <string name="input_phone">Номер телефона</string>
+    <string name="input_password">Пароль</string>
+    <string name="input_full_name">Полное имя</string>
+    <string name="input_message">Сообщение</string>
+
+    //labels
+    <string name="label_in_app">В приложении</string>
+    <string name="label_in_contacts">В приложении</string>
+    <string name="label_number_phone">Номер телефона</string>
+    <string name="label_invite_in_chat">Пригласить в чат</string>
+    <string name="label_send_to">Отправить: </string>
+
+    //texts
+    <string name="text_full_name">Юзер Юзерович</string>
+    <string name="text_number_phone">+992900800000</string>
+    <string name="exit">Выход</string>
+
+</resources>

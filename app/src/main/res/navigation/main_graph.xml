@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/chatsFragment">
+
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="com.seros.messenger.presentation.ui.chat.ChatsFragment"
+        android:label="@string/menu_chats"
+        tools:layout="@layout/fragment_chats" />
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.seros.messenger.presentation.ui.users.UsersFragment"
+        android:label="@string/menu_users"
+        tools:layout="@layout/fragment_users" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.seros.messenger.presentation.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
